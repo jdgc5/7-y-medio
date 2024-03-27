@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>7 y Medio</title>
+</head>
+<body>
+    <header>
+        <div class="botones">
+            <button id="iniciarJuego">Simulacion</button>
+            <button id="singlePlayer">SinglePlayer</button>
+        </div>
+        <nav id="mensajesJuego">Bienvenido a la simulación del 7 y medio.</nav>
+        <div class="botones">
+            <button id="reglas">Reglas</button>
+            <button id="modal-chart">Estadísticas</button>
+        </div>
+    </header>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close2">&times;</span>
+            <div id="myReglas">
+                <h1>Bienvenido al juego de 7 y Medio</h1>
+                <h2>Reglas:</h2>
+                <h3>- Un jugador ganará si su puntuación es mayor que la de su rival y menor que 7.5.</h3>
+                <h3>- El jugador pierde automáticamente si su puntuación supera 7.5.</h3>
+                <h3>- En caso de empate, no ganará nadie.</h3>
+                <h3>- Una vez que decidas plantarte, la banca realizará su movimiento.</h3>
+                <h3>- En la simulación la Banca estará obligada a plantarse con una puntacion de 5.5+</h3>
+            </div>
+        </div>
+    </div>      
+    <div>
+        
+    </div>
+    <div class="panelJugadores">
+        <div class="jugador" id="turn0">
+            <div class="infoJugador" >
+                <h2 id="nombreJugador" class="nombreJugador">Jugador</h2>
+                <div class="stats">
+                    <p>Victorias: <span id="victoriasJugador"></span></p>
+                    <p>Derrotas: <span id="derrotasJugador"></span></p>
+                </div>
+                <p>Total Card Points: <span class="number" id="number0"></span></p>
+            </div>
+            <div class="shareCards" id="shareCards0"></div>
+            <div class="accionesJugador">
+                <button id="pickCard0" class="pedirCarta">Carta</button>
+                <button id="stand0" class="plantarse">Plantarse</button>
+            </div> 
+        </div>
+        <div class="jugador" id="turn1">
+            <div class="infoJugador">
+                <h2 id="nombreJugador2" class="nombreJugador">Banca</h2>
+                <div class="stats">                
+                    <p>Victorias: <span id="victoriasBanca"></span></p>
+                    <p>Derrotas: <span id="derrotasBanca"></span></p>
+                </div>
+                <p>Total Card Points: <span class="number" id="number1"></span></p>
+            </div>
+            <div class="shareCards" id="shareCards1"></div>
+            <div class="accionesJugador">
+                <button id="pickCard1" class="pedirCarta">Carta</button>
+                <button id="stand1" class="plantarse">Plantarse</button>
+            </div> 
+        </div>
+    </div>
+
+    <footer>
+        
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="modules/script.js"></script>
+    <script type="module" src="modules/chart.js"></script>
+    <script src="modules/reglas.js"></script>
+</body>
+</html>

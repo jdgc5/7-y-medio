@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+    --button-color: #007bff;
+    --hover-color: #042141;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    gap: 1rem;
+}
+
+header h1 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+nav {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    flex: 8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    color: black;
+}
+
+#reglas,
+#modal-chart,
+#iniciarJuego,
+#singlePlayer {
+    padding: 10px 20px;
+    background-color: var(--button-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#reglas:hover,
+#modal-chart:hover,
+#iniciarJuego:hover,
+#singlePlayer:hover {
+    background-color: var(--hover-color);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 320px;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--button-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.nombreJugador {
+    margin-bottom: 10px;
+}
+
+#cartasJugador {
+    margin-bottom: 20px;
+}
+
+.pedirCarta {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+.player-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.jugador {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 5px;
+    width: 80px;
+    text-align: center;
+    padding: 15px 15px;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.panelResultado {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 5px;
+    width: 80px;
+    text-align: center;
+    padding: 30px 20px;
+    height: 130px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.panelJugadores {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 5rem;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close, .close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus,
+.close2:hover,
+.close2:focus  {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#myReglas {
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    border-radius: 5px; 
+    margin-bottom: 20px; 
+}
+
+#myReglas h1 {
+    color: #333; 
+    font-size: 24px; 
+    margin-bottom: 10px; 
+}
+
+#myReglas h2 {
+    color: #555; 
+    font-size: 20px; 
+    margin-bottom: 10px; 
+}
+
+#myReglas h3 {
+    color: #777; 
+    font-size: 16px; 
+    margin-bottom: 5px; 
+}
+.accionesJugador{
+    display: flex;
+    gap:2rem;
+}
+.infoJugador{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid gray;
+    padding: 0.5rem 1rem;
+}
+.stats{
+    display: flex;
+    justify-content: space-between;
+    gap:2rem
+}
+
+.infoJugador p{
+    margin: 0.1;
+}
+
+.shareCards {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    align-content: stretch;
+}
+
+.number {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color:blue;
+    border-radius: 10%;
+    padding: 1rem;
+    border: 1px solid white;
+    margin-left: 10px;
+}
+
+.green {
+    background-color: green;
+    box-shadow: 1px 1px 1px green;
+}
+.gray {
+    background-color: gray;
+    box-shadow: 1px 1px 1px gray;
+}
